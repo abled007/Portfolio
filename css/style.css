@@ -1,8 +1,67 @@
+html {
+    block-size: 100%;
+    inline-size: 100%;
+    text-align: center;
+}
+
 body {
+    background: hsl(204 100% 5%);
+    color: white;
+    min-block-size: 200vh;
+    min-inline-size: 100%;
+    padding: 5vmin;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui;
+    font-size: min(200%, 5vmin);
     margin: 0;
 }
 
-nav {
+.cover {
+    background: radial-gradient(
+      hsl(100 100% 60%), 
+      hsl(200 100% 60%) 
+    ) fixed;
+    background: conic-gradient(
+      hsl(100 100% 60%), 
+      hsl(200 100% 60%), 
+      hsl(100 100% 60%) 
+    ) fixed;
+    background: red;
+    animation: transform 10s infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+} 
+  
+@keyframes transform {
+    0%   {background-color: #f2454d}
+    20%  {background-color: rgb(255, 255, 0);}
+    40%  {background-color: hsl(120, 96%, 51%);}
+    60%  {background-color: #04d2e9;}
+    80%  {background-color: rgb(234, 0, 234);}
+    100% {background-color: rgb(235, 3, 3);} 
+}
+
+h1 {
+    font-size: 10vmin;
+    line-height: 1.1;
+    max-inline-size: 15ch;
+    margin: auto;
+}
+  
+  /* p {
+    font-family: "Dank Mono", ui-monospace, monospace;
+    margin-top: 1ch;
+    line-height: 1.35;
+    max-inline-size: 40ch;
+    margin: auto;
+  } */
+  
+
+
+/* nav {
     overflow: hidden;
     background-color: white;
 }
@@ -13,9 +72,9 @@ nav a {
     text-decoration: none;
     text-align: center;
     padding: 20px;
-}
+} */
 
-.sticky {
+/* .sticky {
     position: sticky;
     top: 0;
     width: 100%;
@@ -23,6 +82,10 @@ nav a {
 
 .sticky + .content {
     padding-top: 60px;
+} */
+/* 
+.cover {
+    padding: 250px;
 }
 
 .about, .project, .proj-intro {
@@ -46,9 +109,9 @@ nav a {
 }
 
 .proj-intro {
-    text-align: center;
     display: grid;
     grid-template-columns: auto auto;
+    padding: 50px;
 }
 
 .contact {
@@ -99,4 +162,4 @@ nav a {
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 80px;
     grid-template-columns: auto auto auto auto;
-}
+} */
