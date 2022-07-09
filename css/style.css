@@ -133,12 +133,13 @@ a:hover {
     background: radial-gradient(
         hsl(100 100% 60%), 
         hsl(200 100% 60%) 
-      ) fixed;
-      background: conic-gradient(
+    ) fixed;
+    background: conic-gradient(
         hsl(100 100% 60%), 
         hsl(200 100% 60%), 
         hsl(100 100% 60%) 
-      ) fixed;
+    ) fixed;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -149,28 +150,33 @@ p {
     margin: auto;
 } 
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
+.skill {
+    background-color: black;
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 150%;
 }
+
+.grid-skill {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background: rgb(255,0,251);
+    background: radial-gradient(circle, rgba(255,0,251,1) 0%, rgba(227,0,212,1) 51%, rgba(104,0,255,1) 100%);
+    border: 1px  solid black;
+}
+
+.skill-item {
+    border: .9px solid rgba(0, 0, 0, 0.8);
+    padding: 100px;
+    text-align: center;
+}
+
 
 /*
 .proj-intro {
     display: grid;
     grid-template-columns: auto auto;
     padding: 50px;
-}
-
-.grid-skill {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: white;
-    border: 1px  solid black;
-}
-
-.grid-item {
-    border: .9px solid rgba(0, 0, 0, 0.8);
-    padding: 60px;
-    text-align: center;
 }
 
 .project {
