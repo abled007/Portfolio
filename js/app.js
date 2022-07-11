@@ -45,8 +45,8 @@ class StickyNavigation {
       let self = this;
       $('.container').each(function() {
         let id = $(this).attr('href');
-        let offsetTop = $(id).offset().top - self.tabContainerHeight;
-        let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
+        let offsetTop = $(id).offset() - self.tabContainerHeight;
+        let offsetBottom = $(id).offset() + $(id).height() - self.tabContainerHeight;
         if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
           newCurrentId = id;
           newCurrentTab = $(this);
@@ -55,7 +55,6 @@ class StickyNavigation {
       if(this.currentId != newCurrentId || this.currentId === null) {
         this.currentId = newCurrentId;
         this.currentTab = newCurrentTab;
-        this.setSliderCss();
       }
     }
   }
