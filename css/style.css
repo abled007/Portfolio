@@ -161,7 +161,6 @@ p {
     line-height: 1.35;
     max-inline-size: 40ch;
     margin: auto;
-    text-align: center;
 } 
 
 .skill {
@@ -173,7 +172,7 @@ p {
 
 .grid-skill {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4, 1fr);
     background: rgb(255,0,251);
     background: radial-gradient(circle, rgba(255,0,251,1) 0%, rgba(227,0,212,1) 51%, rgba(104,0,255,1) 100%);
     border: 1px  solid black;
@@ -199,7 +198,7 @@ p {
     padding: 10px; 
 }
 
-.p-grid {
+a, a:visited {
     background-color: rgba(255, 255, 255, 0.1);
     border: 10px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -211,10 +210,13 @@ p {
     text-decoration: none;
 }
 
-.p-grid:hover {
+
+
+.p-grid:hover, a:hover {
     --p: 100%;
     color: black;
 }
+
 
 /* .contact {
     display: grid;
@@ -228,4 +230,4 @@ p {
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 80px;
     grid-template-columns: auto auto auto auto;
-}   */
+} */
