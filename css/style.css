@@ -246,3 +246,8 @@ a, a:visited {
     grid-template-columns: 50% 50%;
     font-family: 'Bebas Neue';
 }
+
+img {
+    border-radius: 50px;
+    padding: 30px;
+}
