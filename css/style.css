@@ -182,6 +182,11 @@ p {
     background: rgb(255,0,251);
     background: radial-gradient(circle, rgba(255,0,251,1) 0%, rgba(227,0,212,1) 51%, rgba(104,0,255,1) 100%);
     border: 1px  solid black;
+    max-height: fit-content;
+}
+
+.slide {
+    margin: 0;
 }
 
 .skill-item {
@@ -251,4 +256,8 @@ a, a:visited {
 img {
     border-radius: 50px;
     padding: 30px;
+}
+
+.contact {
+    display: grid;
 }
