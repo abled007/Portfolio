@@ -233,7 +233,7 @@ a, a:visited {
 
 .contact {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     margin-block-end: 0;
     margin-block-start: 0;
     background-color: black;
@@ -258,6 +258,6 @@ img {
     padding: 30px;
 }
 
-.contact {
-    display: grid;
+#connect {
+    color: white;
 }
