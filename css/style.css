@@ -249,8 +249,9 @@ a, a:visited {
 
 .p {
     display: grid;
-    grid-template-columns: 50% 50%;
+    /* grid-template-columns: 50% 50%; */
     font-family: 'Bebas Neue';
+    padding: 20px;
 }
 
 img {
